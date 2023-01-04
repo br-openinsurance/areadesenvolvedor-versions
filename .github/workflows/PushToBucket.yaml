@@ -19,7 +19,7 @@ jobs:
       - name: Push to S3
         uses: reggionick/s3-deploy@v3
         with:
-          folder: ./
+          folder: ./versions
           bucket: areadesenvolvedor-versions
           bucket-region: us-east-2
           invalidation: /
@@ -27,4 +27,3 @@ jobs:
           no-cache: true
           private: true
           filesToInclude: ".*/*,*/*,**"
-          
