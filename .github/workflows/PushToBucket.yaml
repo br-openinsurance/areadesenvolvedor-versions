@@ -14,8 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - run: ls -la
-
       - name: Push to S3
         uses: reggionick/s3-deploy@v3
         with:
@@ -27,3 +25,4 @@ jobs:
           no-cache: true
           private: true
           filesToInclude: ".*/*,*/*,**"
+          
