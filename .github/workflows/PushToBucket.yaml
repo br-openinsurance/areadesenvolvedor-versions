@@ -8,10 +8,6 @@ jobs:
   check-application:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        ruby-version: [3.1]
-
     steps:
       - uses: actions/checkout@v3
 
